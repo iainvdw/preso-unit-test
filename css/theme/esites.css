@@ -69,6 +69,8 @@ body {
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
+.reveal h3 {color:#999;}
+
 /*********************************************
  * LINKS
  *********************************************/
@@ -157,11 +159,7 @@ body {
 /*********************************************
  * CUSTOM STATES
  *********************************************/
-.esites-welcome .reveal .state-background {background: rgba( 252, 39, 74, 0.8 );}
-.esites-welcome .reveal h3 {color:#fff;}
-.esites-welcome .reveal a {color:#191919;}
-.esites-welcome .reveal a:not(.image):hover {color: #191919;}
-.esites-welcome .reveal .roll span:after {background: #191919;}
+.esites-welcome .reveal h3 {color:#fc274a;}
 
 /*********************************************
  * CUSTOM ELEMENTS
@@ -169,4 +167,7 @@ body {
  #esites {width:124px; height:61px; display:block; position:absolute; bottom:1em; left:1em; background:transparent url(../../img/e-sites.png) no-repeat 0 0; background-size:124px 61px; border:0; overflow:hidden; /* IE 6/7 fallback */ *text-indent: -9999px;}
  #esites:before {content:""; display:block; width:0; height:150%;}
 
- .reveal pre code {outline:;}
+ /*********************************************
+ * CUSTOM HELPERS
+ *********************************************/
+ .reveal section .clean-img {background:none; border:none; box-shadow:none;}
