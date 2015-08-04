@@ -20,8 +20,10 @@
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #1c1e20; //#222;
 
+$esitesRed: #FE284A;
+
 $mainColor: #fff;
-$headingColor: #fff;
+$headingColor: $esitesRed;
 
 $mainFontSize: 32px;
 $mainFont: 'robotlight', Helvetica, sans-serif;
@@ -30,7 +32,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #FE284A;
+$linkColor: $esitesRed;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -38,6 +40,12 @@ $heading1Size: 2.5em;
 $heading2Size: 1.8em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
+
+section:first-child {
+	h3 {
+		color: #fff;
+	}
+}
 
 section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
