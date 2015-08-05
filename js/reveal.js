@@ -1530,8 +1530,8 @@
 				transformSlides( { layout: '' } );
 			}
 			else {
-				// Prefer zooming in desktop Chrome so that content remains crisp
-				if( !isMobileDevice && /chrome/i.test( navigator.userAgent ) && typeof dom.slides.style.zoom !== 'undefined' ) {
+				// Prefer zooming in desktop Chrome and Safari so that content remains crisp
+				if( !isMobileDevice && /(chrome|safari)/i.test( navigator.userAgent ) && typeof dom.slides.style.zoom !== 'undefined' ) {
 					dom.slides.style.zoom = scale;
 					transformSlides( { layout: '' } );
 				}
